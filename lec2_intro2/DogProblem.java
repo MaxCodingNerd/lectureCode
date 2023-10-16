@@ -4,10 +4,10 @@ package lec2_intro2;
  * Created by hug.
  */
 public class DogProblem {
+    /* Pick out all the dogs in the Dog list that are larger than its neighbors. */ 
     public static Dog[] largerThanFourNeighbors(Dog[] dogs) {
         Dog[] returnDogs = new Dog[dogs.length];
         int cnt = 0;
-
         for (int i = 0; i < dogs.length; i += 1) {
             if (isBiggestOfFour(dogs, i)) {
                 returnDogs[cnt] = dogs[i];
